@@ -1,0 +1,40 @@
+<!-- docs/_sidebar.md -->
+- 开始入门
+  - [核心组件](centerImportComps.md)
+    - [=目录导览=](core-cps/readme.md)
+    - 表格类
+      - [TableScroller](core-cps/TableScroller.md)
+      - [TabedPerTableScroller](core-cps/TabedPerTableScroller.md)
+    - 橱窗类
+      - [winTabSwitchPanel](core-cps/winTabSwitchPanel.md)
+      - [rollNum-panel](core-cps/rollNum-panel.md)
+    - 页眉类
+      - [HeaderTitle](core-cps/HeaderTitle.md)
+    - 模态类
+      - [DialogTogther](core-cps/DialogTogther.md)
+        - [search-bar](core-cps/search-bar.md)
+    - 按钮类
+      - [CardBtnGroup](core-cps/CardBtnGroup.md)
+  - [业务组件](yewu.md)
+    - [HeaderTitle组合](HeaderTitle组合.md)
+      - 功能类（与业务状态绑定）
+        - [date-selector](date-selector.md)
+        - [off-site-selector](off-site-selector.md)
+        - [setup-ctrl](setup-ctrl.md)
+        - [error-collector](error-collector.md)
+    - [大数据图表](大数据图表.md)
+      - 地图类
+        - [wakamap (瓦块地图)](瓦块地图.md)
+        - [ecmap (echart地图)](echart地图.md)
+      - 其它（定制化）
+        - [wordcloud (词云)](wordcloud.md)
+  - [个性化展示组件](个性化展示组件.md)
+    - [CardTileComb (卡片磁贴组合)](CardTileComb.md)
+    - [midLargeImgComp (居中大图组合)](居中大图组合.md)
+  - [辅助组件](辅助组件.md)
+      - 错误捕获类
+        - [errPanel (请求异常捕获板)](errPanel.md)
+  - [布局组件](layout.md)
+- 其它
+  - [注意事项](bookmark.md)
+  - [更新日志](changelog.md)
