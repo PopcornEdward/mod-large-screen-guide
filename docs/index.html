@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/base/vue.min.css">
+  <link rel="stylesheet" href="css/base/sidebar.min.css">
+  <link rel="stylesheet" href="css/base/sidebar-folder.min.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      basePath: './',
+      search: 'auto', // default
+      search: [
+        '/',
+      ],
+      repo: '',
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<footer style="text-align: center;margin-top: 50px;">',
+            '<span> Made with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="red" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> by <a href="https://www.linkedin.com/in/boopathikumar/" target="_blank">@实名制项目组</a>  &copy; 2024 </span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+      ],
+      coverpage: true,
+      auto2top: true,
+      executeScript: true,
+      loadSidebar: true,
+      loadNavbar: false,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+      },
+      maxLevel: 4,
+      subMaxLevel: 3,
+      sidebarDisplayLevel: 1, // set sidebar display level
+      name: '新版大屏前端文档',
+      search: {
+        noData: {
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search'
+        }
+      },
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      // ...
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="js/base/docsify.min.js"></script>
+  <script src="js/base/search.min.js"></script>
+  <script src="js/base/zoom-image.min.js"></script>
+  <script src="js/base/docsify-sidebar-collapse.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/include.min.js"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+</body>
+
+</html>
