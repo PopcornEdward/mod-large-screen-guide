@@ -3,7 +3,7 @@
 rm -rf ./website
 # 克隆仓库, 将会把项目所有内容克隆到当前目录的repo目录下(如果repo目录不存在会创建)
 git clone ssh://root@192.168.1.109:2222/frontend/doc-screen-front-api.git website
-# 将Dockerfile克隆到website目录的docs目录下 ces
+# 将Dockerfile克隆到website目录的docs目录下 第一次测试
 cp ./Dockerfile ./website/docs
 # 构建docker镜像
 docker build -f ./website/docs/Dockerfile -t docsify/frontbook .
