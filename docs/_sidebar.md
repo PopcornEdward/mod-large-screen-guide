@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 - 开始入门
   - [核心组件](centerImportComps.md)
-    - [=目录导览=](core-cps/readme.md)
+    - [=目录导览=](core-cps/README.md)
     - 表格类
       - [TableScroller](core-cps/TableScroller.md)
       - [TabedPerTableScroller](core-cps/TabedPerTableScroller.md)
