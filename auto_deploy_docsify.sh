@@ -1,4 +1,5 @@
 #!/bin/bash
+ls
 chmod 777 website
 # 删除之前部署的网站对应的目录
 rm -rf ./website
