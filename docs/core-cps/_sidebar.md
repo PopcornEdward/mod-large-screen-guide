@@ -4,3 +4,4 @@
 * 橱窗类
   * [winTabSwitchPanel](core-cps/winTabSwitchPanel.md)
   * [rollNum-panel](core-cps/rollNum-panel.md)
+    * [box](core-cps/rollNum-panel/box.md)
