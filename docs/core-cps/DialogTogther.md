@@ -24,7 +24,7 @@
 
 | 参数              | 说明                  | 类型    | 可选值                           | 默认值 |
 | ----------------- | --------------------- | ------- | -------------------------------- | ------ |
-| mode              | 整体展示内容模式      | String  | [table]() / [form]() / [chart]() | table  |
+| mode              | 整体展示内容模式      | String  | [table](#table) / [form](#form) / [chart](#chart) | table  |
 | winTabOb          | 窗口切换相关配置      | Object  | [nextDataLookAt](#winTabOb)      | {}     |
 | winTabSwitchPanel | 是否开启面板内容切换  | Boolean | false / true                     | true   |
 | table             | table展示细节描述模型 | Object  | [nextDataLookAt](#table)         | {}     |
@@ -108,11 +108,16 @@
 
 ### table
 
-| 参数       | 说明                           | 类型   | 可选值             | 默认值        |
-| ---------- | ------------------------------ | ------ | ------------------ | ------------- |
-| h          | tab标签名称                    | String |                    |               |
-| modalInfo  | 选项卡对应接口编号（接口索引） | Object | [more](#modalInfo) |               |
-| queryParam | 对应接口查询入参扩展参数       | Object |                    | `{ year:"" }` |
+| 参数        | 说明                      | 类型               | 可选值                                               | 默认值                            |
+| ----------- | ------------------------- | ------------------ | ---------------------------------------------------- | --------------------------------- |
+| h           | 表格高度                  | String,Number      |                                                      |                                   |
+| modalInfo   | 模态框相关信息            | Object             | [more](#modalInfo)                                   |                                   |
+| tagInfo     | 切换tag附加信息           | Object             |                                                      | `{uid: "f2f995ff",}`              |
+| formbase    | table查询相关条件参数     | Object             |                                                      | `{}`                              |
+| searchItems | searchBar搜索栏ui模型     | Array{json-object} | [searchBar](core-cps/search-bar.md)                  | []                                |
+| headerItems | table表头ui模型           | Array{json-object} | [headerItems](#headerItems)                                      | []                                |
+| bodyItems   | table查询结构数据返回list | Array{json-object} |                                                      | []                                |
+| pager       | 分页条相关配置            | Object             | `pageSize`\ <br />`pageNumber` \ <br />`total`<br /> | `{ pageSize: 10,pageNumber: 1, }` |
 
 ✨✨✨
 
@@ -120,9 +125,45 @@
 
 ```json
 {
-                  title: modalInfo.title,//标题
-                  linkt3: process.env.VUE_APP_DDSYSEXTLINK_ALLCSXT,//第三方系统，绝对地址
-                }
+    title: modalInfo.title,//标题
+    linkt3: process.env.VUE_APP_DDSYSEXTLINK_ALLCSXT,//第三方系统，绝对地址
+}
+```
+
+✨✨✨
+
+#### headerItems
+
+> 基本数据字段如下
+
+```json
+headerItems: [
+    {
+        label: "慈善信托", //表头字段
+        // w:100,
+        property: "field01",
+    },
+    {
+        label: "受托人区划", //表头字段
+        // w:100,
+        property: "areaName02Name",
+    },
+    {
+        label: "信托期限", //表头字段
+        // w:100,
+        property: "field03",
+    },
+    {
+        label: "资金规模（万元）", //表头字段
+        // w:100,
+        property: "bkax3217",
+    },
+    {
+        label: "备案时间", //表头字段
+        // w:100,
+        property: "bkax3202",
+    },
+]
 ```
 
 
@@ -135,19 +176,18 @@
 
 ### form
 
-| 参数 | 说明                           | 类型   | 可选值 | 默认值 |
-| ---- | ------------------------------ | ------ | ------ | ------ |
-| uid  | 选项卡对应接口编号（接口索引） | String |        |        |
+| 参数 | 说明 | 类型   | 可选值 | 默认值 |
+| ---- | ---- | ------ | ------ | ------ |
+| --   |      | String |        |        |
 
 ✨✨
 
 ### chart
 
-| 参数       | 说明                           | 类型   | 可选值 | 默认值        |
-| ---------- | ------------------------------ | ------ | ------ | ------------- |
-| name       | tab标签名称                    | String |        |               |
-| uid        | 选项卡对应接口编号（接口索引） | String |        |               |
-| queryParam | 对应接口查询入参扩展参数       | Object |        | `{ year:"" }` |
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+| ---- | ---- | ---- | ------ | ------ |
+|      |      |      |        |        |
+|      |      |      |        |        |
 
 ✨✨
 
