@@ -33,7 +33,7 @@
     - [midLargeImgComp (居中大图组合)](居中大图组合.md)
   - [辅助组件](辅助组件.md)
       - 错误捕获类
-        - [errPanel (请求异常捕获板)](errPanel.md)
+        - [errPanel (请求异常捕获板)](assist-cps/errPanel.md)
   - [布局组件](layout.md)
 - 其它
   - [注意事项](bookmark.md)
