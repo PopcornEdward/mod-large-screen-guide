@@ -16,18 +16,18 @@
     - 按钮类
       - [CardBtnGroup](core-cps/CardBtnGroup.md)
   - [业务组件](yewu.md)
-    - [HeaderTitle组合](HeaderTitle组合.md)
+    - [HeaderTitle组合](biz-cps/HeaderTitle组合.md)
       - 功能类（与业务状态绑定）
-        - [date-selector](date-selector.md)
-        - [off-site-selector](off-site-selector.md)
-        - [setup-ctrl](setup-ctrl.md)
-        - [error-collector](error-collector.md)
-    - [大数据图表](大数据图表.md)
+        - [date-selector](biz-cps/date-selector.md)
+        - [off-site-selector](biz-cps/off-site-selector.md)
+        - [setup-ctrl](biz-cps/setup-ctrl.md)
+        - [error-collector](biz-cps/error-collector.md)
+    - [大数据图表](biz-cps/大数据图表.md)
       - 地图类
-        - [wakamap (瓦块地图)](瓦块地图.md)
-        - [ecmap (echart地图)](echart地图.md)
+        - [wakamap (瓦块地图)](biz-cps/瓦块地图.md)
+        - [ecmap (echart地图)](biz-cps/echart地图.md)
       - 其它（定制化）
-        - [wordcloud (词云)](wordcloud.md)
+        - [wordcloud (词云)](biz-cps/wordcloud.md)
   - [个性化展示组件](个性化展示组件.md)
     - [CardTileComb (卡片磁贴组合)](CardTileComb.md)
     - [midLargeImgComp (居中大图组合)](居中大图组合.md)
