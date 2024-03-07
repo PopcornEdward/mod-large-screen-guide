@@ -5,3 +5,10 @@
   * [winTabSwitchPanel](core-cps/winTabSwitchPanel.md)
   * [rollNum-panel](core-cps/rollNum-panel.md)
     * [box](core-cps/rollNum-panel/box.md)
+* 页眉类
+    * [HeaderTitle](core-cps/HeaderTitle.md)
+* 模态类
+    * [DialogTogther](core-cps/DialogTogther.md)
+    * [search-bar](core-cps/search-bar.md)
+* 按钮类
+    * [CardBtnGroup](core-cps/CardBtnGroup.md)

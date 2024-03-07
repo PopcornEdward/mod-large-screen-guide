@@ -29,12 +29,13 @@
       - 其它（定制化）
         - [wordcloud (词云)](biz-cps/wordcloud.md)
   - [个性化展示组件](个性化展示组件.md)
-    - [CardTileComb (卡片磁贴组合)](CardTileComb.md)
-    - [midLargeImgComp (居中大图组合)](居中大图组合.md)
+    - [CardTileComb (卡片磁贴组合)](gxh-cps/CardTileComb.md)
+    - [midLargeImgComp (居中大图组合)](gxh-cps/居中大图组合.md)
   - [辅助组件](辅助组件.md)
       - 错误捕获类
         - [errPanel (请求异常捕获板)](assist-cps/errPanel.md)
   - [布局组件](layout.md)
 - 其它
   - [注意事项](bookmark.md)
+  - [设计原则](OverallDesign.md)
   - [更新日志](changelog.md)
